@@ -8,7 +8,8 @@
 }
 
 .navbar {
-    z-index: 10;
+    z-index: 100;
+    background-color: #25274D;
 }
 
 .navbar-toggler {
@@ -30,6 +31,7 @@
 }
 
 .social-container {
+    z-index: 10;
     position: fixed;
     width: 40px;
     left: 16px;
@@ -42,21 +44,17 @@
 }
 
 .social-button {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     margin-bottom: 20px;
 }
 
 .social-link {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     fill: #FFF;
     transition: all .3s ease;
 }
-
-/* .social-link-active {
-    fill: #66FCF1;
-} */
 
 .social-button:hover .social-link {
     fill: #2E9CCA;
@@ -64,27 +62,34 @@
 }
 
 h1#nice-header {
+    z-index: 5;
     display: block;
     color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 70px;
     transition: all .5s ease;
 }
 
 h1#intro-header {
+    z-index: 5;
     color: #2E9CCA;
-    font-size: 20px;
+    font-size: 30px;
     font-family: 'Montserrat', sans-serif;
     transition: all .5s ease;
 }
 
 h1#intro-other-header {
+    z-index: 5;
     display: block;
-    color: rgb(80, 80, 87);
+    color: rgb(101, 101, 110);
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     transition: all .5s ease;
+}
+
+.text-header-container {
+    z-index: 5;
 }
 
 .memes {
@@ -111,10 +116,31 @@ h1#intro-other-header {
     fill: #2E9CCA;
 }
 
+.social-container-mobile {
+    visibility: hidden;
+    z-index: 5;
+    position: fixed;
+    align-items: center;
+    width: auto;
+    height: 60px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #000000;
+}
+
 
 @media screen and (max-width: 600px) {
     .social-container {
       visibility: hidden;
+    }
+
+    .social-container-mobile {
+        visibility: visible;
+    }
+
+    .social-button {
+        margin-bottom: 0px;
     }
 
     h1#nice-header {
@@ -134,7 +160,7 @@ h1#intro-other-header {
     
     h1#intro-other-header {
         margin-left: 10px;
-        color: rgb(80, 80, 87);
+        color: rgb(101, 101, 110);
         font-family: 'Montserrat', sans-serif;
         font-size: 30px;
     }
@@ -143,6 +169,14 @@ h1#intro-other-header {
   @media screen and (max-width: 1024px) {
     .social-container {
       visibility: hidden;
+    }
+
+    .social-container-mobile {
+        visibility: visible;
+    }
+
+    .social-button {
+        margin-bottom: 0px;
     }
 
     h1#nice-header {
@@ -162,7 +196,7 @@ h1#intro-other-header {
     
     h1#intro-other-header {
         margin-left: 10px;
-        color: rgb(80, 80, 87);
+        color: rgb(101, 101, 110);
         font-family: 'Montserrat', sans-serif;
         font-size: 40px;
     }
