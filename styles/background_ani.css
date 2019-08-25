@@ -23,7 +23,8 @@
     height: 20px;
     background: rgba(70, 72, 102, 0.5);
     animation: animate 25s linear infinite;
-    bottom: -150px;
+    bottom: 0px;
+    opacity: 0;
     
 }
 
@@ -109,12 +110,16 @@
 
     0%{
         transform: translateY(0) rotate(0deg);
-        opacity: 1;
+        opacity: 0;
         border-radius: 0;
     }
 
+    50%{
+        opacity: 1;
+    }
+
     100%{
-        transform: translateY(-1000px) rotate(720deg);
+        transform: translateY(-80vh) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
     }

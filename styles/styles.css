@@ -1,15 +1,13 @@
-.background {
-    background-color: #25274D;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0px;
-    left: 0px;
-}
 
+
+/* Navbar */
 .navbar {
+    width: 100%;
     z-index: 100;
+    position: fixed !important;
+    top: 0;
     background-color: #25274D;
+    font-size: 20px;
 }
 
 .navbar-toggler {
@@ -30,35 +28,35 @@
     color: #2E9CCA;
 }
 
-.social-container {
-    z-index: 10;
-    position: fixed;
-    width: 40px;
-    left: 16px;
-    bottom: 0px;
-    align-items: center;
+.header-button {
+    width: 48px;
+    height: 48px;
 }
 
-.top-bar {
-    margin-bottom: 7px;
-}
-
-.social-button {
-    width: 25px;
-    height: 25px;
-    margin-bottom: 20px;
-}
-
-.social-link {
-    width: 25px;
-    height: 25px;
+.header-link {
+    width: 48px;
+    height: 48px;
     fill: #FFF;
     transition: all .3s ease;
 }
 
-.social-button:hover .social-link {
+.header-button:hover .header-link {
     fill: #2E9CCA;
-    transform: translate(0,-2px);
+}
+
+/* Intro Page */
+
+.intropage {
+    background-color: #25274D;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.text-header-container {
+    z-index: 5;
 }
 
 h1#nice-header {
@@ -88,32 +86,33 @@ h1#intro-other-header {
     transition: all .5s ease;
 }
 
-.text-header-container {
-    z-index: 5;
-}
+/* Social Media Button Bar */
 
-.memes {
-    opacity: 0;
-}
-
-.load {
-    opacity: 1;
-}
-
-.header-button {
+.social-container {
+    z-index: 10;
+    position: fixed;
     width: 40px;
-    height: 40px;
+    left: 16px;
+    bottom: 0px;
+    align-items: center;
 }
 
-.header-link {
-    width: 40px;
-    height: 40px;
+.social-button {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
     fill: #FFF;
     transition: all .3s ease;
 }
 
-.header-button:hover .header-link {
+.social-button:hover .social-link {
     fill: #2E9CCA;
+    transform: translate(0,-2px);
 }
 
 .social-container-mobile {
@@ -129,44 +128,69 @@ h1#intro-other-header {
     background-color: #000000;
 }
 
+/* About me Page */
 
-@media screen and (max-width: 600px) {
-    .social-container {
-      visibility: hidden;
-    }
+.aboutme {
+    background-color: #25274D;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+}
 
-    .social-container-mobile {
-        visibility: visible;
-    }
+.aboutme-content {
+    color: white;
+}
 
-    .social-button {
-        margin-bottom: 0px;
-    }
+h1#aboutme-header {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+    font-size: 50px;
+    transition: all .5s ease;
+}
 
-    h1#nice-header {
-        margin-left: 10px;
-        color: #FFF;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
-        font-size: 37.5px;
-    }
-    
-    h1#intro-header {
-        margin-left: 10px;
-        color: #2E9CCA;
-        font-size: 15px;
-        font-family: 'Montserrat', sans-serif;
-    }
-    
-    h1#intro-other-header {
-        margin-left: 10px;
-        color: rgb(101, 101, 110);
-        font-family: 'Montserrat', sans-serif;
-        font-size: 30px;
-    }
-  }
+.aboutme-content-holder {
+    width: 1000px;
+    height: auto;
+    transition: all .5s ease;
+}
 
-  @media screen and (max-width: 1024px) {
+.aboutme-text-holder {
+    width: 550px;
+    height: auto;
+    overflow-wrap: normal;
+    padding-left: 15px;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    color: #AAABB8;
+    font-size: 16px;
+}
+
+.aboutme-text-holder b{
+    color: #2E9CCA;
+}
+
+.aboutme-image-holder {
+    margin-left: 20px;
+}
+
+.headshot {
+    max-width: 100%;
+    height: auto;
+}
+
+/* JQuery Loading Stuff  */
+
+.memes {
+    opacity: 0;
+}
+
+.load {
+    opacity: 1;
+}
+
+/* Tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
     .social-container {
       visibility: hidden;
     }
@@ -200,4 +224,111 @@ h1#intro-other-header {
         font-family: 'Montserrat', sans-serif;
         font-size: 40px;
     }
+
+    h1#aboutme-header {
+        font-size: 30px;
+    }
+
+    .aboutme-content-holder {
+        width: 600px;
+        height: auto;
+    }
+    
+    .aboutme-text-holder {
+        width: 300px;
+        height: auto;
+        font-size: 14px;
+    }
+    .aboutme-image-holder {
+        margin-left: 10px;
+    }
+
+    .headshot {
+        width: 200px;
+        height: auto;
+    }
   }
+
+/* Phone view */
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .navbar {
+        font-size: 18px;
+    }
+    
+    .social-container {
+      visibility: hidden;
+    }
+
+    .social-container-mobile {
+        visibility: visible;
+    }
+
+    .social-button {
+        margin-bottom: 0px;
+        width: 28px;
+        height: 28px;
+        
+    }
+    
+    .social-link {
+        width: 28px;
+        height: 28px;
+    }
+
+    .header-button {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .header-link {
+        width: 45px;
+        height: 45px;
+    }
+
+    h1#nice-header {
+        margin-left: 10px;
+        color: #FFF;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 37.5px;
+    }
+    
+    h1#intro-header {
+        margin-left: 10px;
+        color: #2E9CCA;
+        font-size: 15px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    h1#intro-other-header {
+        margin-left: 10px;
+        color: rgb(101, 101, 110);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+    }
+
+    h1#aboutme-header {
+        font-size: 30px;
+    }
+
+    .aboutme-content-holder {
+        width: 300px;
+        height: auto;
+    }
+    
+    .aboutme-text-holder {
+        width: 175px;
+        height: auto;
+        font-size: 10px;
+    }
+    .fix {
+        width: 100px;
+    }
+
+    .aboutme-image-holder {
+        margin-left: 10px;
+    }
+    
+  }
+
