@@ -191,6 +191,10 @@ h1#aboutme-header {
 
 /* Tablet view */
 @media (min-width: 768px) and (max-width: 1024px) {
+    div#navbarText {
+        margin-top: 10px;
+    }
+
     .social-container {
       visibility: hidden;
     }
@@ -256,6 +260,10 @@ h1#aboutme-header {
         font-size: 18px;
     }
     
+    div#navbarText {
+        margin-top: 10px;
+    }
+
     .social-container {
       visibility: hidden;
     }
