@@ -8,7 +8,10 @@
     />
     <meta property="og:image" content="assets/icon.png" />
     <meta property="og:title" content="My Personal Website" />
-    <meta property="og:description" content="Hi, welcome to my personal website." />
+    <meta
+      property="og:description"
+      content="Hi, welcome to my personal website."
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/background_ani.css" />
@@ -30,11 +33,12 @@
     />
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar" data-offset="15">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-      <a href="#home" class="navbar-brand header-button">
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <a id="nav-link" href="#home" class="navbar-brand header-button">
         <svg
+          id="nav-link"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 32 32"
           class="header-link"
@@ -76,21 +80,27 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#aboutme"
-              >About <span class="sr-only">(current)</span></a
+            <a id="nav-link" class="nav-link" href="#aboutme">About</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a id="nav-link" class="nav-link" href="mailto:kzhu53@uwo.ca"
+              >Contact</a
             >
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="#">Experience</a>
-          </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li> -->
-          <li class="nav-item">
-            <a class="nav-link" href="mailto:kzhu53@uwo.ca">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="assets/Keven_Zhu_Resume.pdf">Resume</a>
+            <a
+              id="nav-link"
+              target="_blank"
+              class="nav-link"
+              href="assets/Keven_Zhu_Resume.pdf"
+              >Resume</a
+            >
           </li>
         </ul>
       </div>
@@ -139,7 +149,7 @@
 
     <!-- About Me -->
     <div
-      class="aboutme  d-flex flex-column align-items-center justify-content-around"
+      class="aboutme d-flex flex-column align-items-center justify-content-around"
       id="aboutme"
     >
       <div class="aboutme-content">
@@ -161,9 +171,10 @@
             <rect width="2" height="110" style="fill: #464866;stroke-width:3" />
           </svg>
           <div class="aboutme-text-holder">
-            Hi, my name is Keven Zhu. I'm a <b>software engineering </b> student
-            currently studying at the <b>University of Western Ontario</b>. I
-            specialize in building responsive and modern web applications.
+            Hi, my name is Keven Zhu. I'm a
+            <b>software engineering </b> student currently studying at the
+            <b>University of Western Ontario</b>. I specialize in building
+            responsive and modern web applications.
             <br />
             <br />
             When I'm not coding, you'll find me on the tennis courts,
@@ -171,6 +182,201 @@
           </div>
           <div class="aboutme-image-holder">
             <img src="assets/headshot.png" class="headshot" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience Page -->
+    <div
+      class="experience d-flex flex-column align-items-center justify-content-around"
+      id="experience"
+    >
+      <div class="experience-content">
+        <h1 class="experience-header memes" id="experience-header">
+          Experience
+        </h1>
+
+        <div class="experience-content-holder d-flex" id="experience-body">
+          <div class="experience-container memes" id="experience-container">
+            <header class="experience-container-header">
+              <div id="experience-material-tabs">
+                <a id="experience-tab1-tab" href="#tab1" class="active">FGS</a>
+                <a id="experience-tab2-tab" href="#tab2">ITG</a>
+                <a id="experience-tab3-tab" href="#tab3">IVEY FINTECH CLUB</a>
+                <a id="experience-tab4-tab" href="#tab4"
+                  >SUNSTANG SOLAR CAR CLUB</a
+                >
+                <span class="blue-bar"></span>
+              </div>
+            </header>
+
+            <div class="experience-tab-content">
+              <div id="tab1">
+                <p>Software Engineer Intern <b>@ FGS</b></p>
+                <p>June 2019 - August 2019</p>
+                <ul>
+                  <li>
+                    Developed new features and implemented feedback on UI/UX for
+                    a SaaS platform which delivers real-time analytics and
+                    insights on the FinTech industry
+                  </li>
+                  <li>
+                    Implemented user account lifecycle management for the
+                    website
+                  </li>
+                  <li>
+                    Implemented an approximate string-matching (fuzzy search)
+                    algorithm for user searches, improving search query results
+                    and reducing search times by an average of 63.7%
+                  </li>
+                  <li>
+                    Managed deployment and testing using Bitbucket Pipelines and
+                    Elastic Beanstalk
+                  </li>
+                </ul>
+              </div>
+              <div id="tab2">
+                <p>Software Engineer Intern <b>@ ITG Canada</b></p>
+                <p>June 2018 - August 2018</p>
+                <ul>
+                  <li>
+                    Developed a trade monitor that tracks incoming trades in
+                    real time using C# and the ASP.Net framework
+                  </li>
+                  <li>
+                    Optimized and improved a file transfer console using C# and
+                    FTP
+                  </li>
+                  <li>
+                    Implemented time-saving features to a real-time trade
+                    monitor written in C#
+                  </li>
+                </ul>
+              </div>
+              <div id="tab3">
+                <p>Developer <b>@ Ivey Fintech Club</b></p>
+                <p>September 2018 - Present</p>
+                <ul>
+                  <li>
+                    Developing a web-based course rating platform using React
+                  </li>
+                  <li>
+                    Led the development team in the core architecture design
+                  </li>
+                  <li>
+                    Played a pivotal role in re-organizing the team to improve
+                    work efficiency
+                  </li>
+                </ul>
+              </div>
+              <div id="tab4">
+                <p>Developer <b>@ Sunstang Solar Car Team</b></p>
+                <p>September 2017 - Present</p>
+                <ul>
+                  <li>
+                    Created a GPS component which tracks the car’s position and
+                    outputs the telemetry data onto an LCD display
+                  </li>
+                  <li>
+                    Created a MPPT, a component which track the power output of
+                    a charging component compares it with the battery voltage to
+                    optimize the charging current to the battery
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Page -->
+    <div
+      class="projects d-flex flex-column align-items-center justify-content-center"
+      id="projects"
+    >
+      <div class="projects-content">
+        <h1 class="projects-header memes" id="projects-header">
+          Projects
+          <svg width="200" height="2" class="fix">
+            <rect
+              width="200"
+              height="2"
+              style="fill: #464866;stroke-width:3"
+              class="fix"
+            />
+          </svg>
+        </h1>
+
+        <div class="projects-content-holder container memes" id="projects-body">
+          <div class="projects-content-row row justify-content-center">
+            <div class="projects-projects col-12 col-md-6 col-lg-4">
+              <div class="row justify-content-center">
+                <a
+                  href="https://github.com/ewyn72/SE2250_Project_eng72_vchopra5_whenning_kzhu53"
+                  target="_blank"
+                >
+                  <div
+                    class="projects-projects-holder jumbotron col-12 col-md-11 col-lg-11"
+                  >
+                    <div id="project1"></div>
+                    <div class="projects-text-background">
+                      <h1 id="projects-content-header">
+                        Battle of Coruscant
+                      </h1>
+                      <p class="lead">A space shoot'em up game made in Unity</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="projects-projects col-12 col-md-6 col-lg-4">
+              <div class="row justify-content-center">
+                <a
+                  href="https://github.com/Keven-Zhu/SusntangProjects/tree/master/GPS"
+                  target="_blank"
+                >
+                  <div
+                    class="projects-projects-holder jumbotron col-12 col-md-11 col-lg-11"
+                  >
+                    <div id="project2"></div>
+                    <div class="projects-text-background">
+                      <h1 id="projects-content-header">
+                        Arduino GPS
+                      </h1>
+                      <p class="lead">
+                        An arduino component which tracks the car's global
+                        position.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="projects-projects col-12 col-md-6 col-lg-4">
+              <div class="row justify-content-center">
+                <a
+                  href="https://github.com/vishalchopra19/SunstangProject/tree/master/arduino_mppt"
+                  target="_blank"
+                >
+                  <div
+                    class="projects-projects-holder jumbotron col-12 col-md-11 col-lg-11"
+                  >
+                    <div id="project3"></div>
+                    <div class="projects-text-background">
+                      <h1 id="projects-content-header">
+                        Arduino MPPT
+                      </h1>
+                      <p class="lead">
+                        An arduino component which maximizes the charging rate
+                        of batteries.
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
