@@ -18,35 +18,38 @@ $(document).ready(function() {
   var loaded2=false;
   var loaded3=false;
   $(window).scroll(function() {
-    if (!loaded1 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 3)) {
+    if (!loaded1 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 2.5)) {
+      console.log(1);
       window.setTimeout(function(){
         document.getElementById('aboutme-header').className += " load";
-      }, 200);
+      }, 400);
   
       window.setTimeout(function(){
         document.getElementById('aboutme-body').className += " load";
-      }, 700);
+      }, 900);
 
       loaded1=true;
     }
-    else if (!loaded2 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 2)) {
+    else if (!loaded2 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 1.5)) {
+      console.log(2);
       window.setTimeout(function(){
         document.getElementById('experience-header').className += " load";
-      }, 200);
+      }, 400);
   
       window.setTimeout(function(){
         document.getElementById('experience-container').className += " load";
-      }, 700);
+      }, 900);
       loaded2=true;
     }
-    else if (!loaded3 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 1)) {
+    else if (!loaded3 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * .5)) {
+      console.log(3);
       window.setTimeout(function(){
         document.getElementById('projects-header').className += " load";
-      }, 200);
+      }, 400);
   
       window.setTimeout(function(){
         document.getElementById('projects-body').className += " load";
-      }, 700);
+      }, 900);
       loaded3=true;
     }
 });

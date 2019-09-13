@@ -335,25 +335,16 @@ h1#projects-header {
 
 .projects-projects-holder:hover #project1 {
   -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
   filter: blur(2px);
 }
 
 .projects-projects-holder:hover #project2 {
   -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
   filter: blur(2px);
 }
 
 .projects-projects-holder:hover #project3 {
   -webkit-filter: blur(2px);
-  -moz-filter: blur(2px);
-  -o-filter: blur(2px);
-  -ms-filter: blur(2px);
   filter: blur(2px);
 }
 
