@@ -19,7 +19,6 @@ $(document).ready(function() {
   var loaded3=false;
   $(window).scroll(function() {
     if (!loaded1 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 2.5)) {
-      console.log(1);
       window.setTimeout(function(){
         document.getElementById('aboutme-header').className += " load";
       }, 400);
@@ -31,7 +30,6 @@ $(document).ready(function() {
       loaded1=true;
     }
     else if (!loaded2 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 1.5)) {
-      console.log(2);
       window.setTimeout(function(){
         document.getElementById('experience-header').className += " load";
       }, 400);
@@ -42,7 +40,6 @@ $(document).ready(function() {
       loaded2=true;
     }
     else if (!loaded3 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * .5)) {
-      console.log(3);
       window.setTimeout(function(){
         document.getElementById('projects-header').className += " load";
       }, 400);
