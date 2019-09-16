@@ -348,6 +348,11 @@ h1#projects-header {
   filter: blur(2px);
 }
 
+.projects-projects-holder:hover #project4 {
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}
+
 #project1 {
   background-image: url("../assets/SHUMP_thumbnail.jpg");
   position: absolute;
@@ -378,6 +383,20 @@ h1#projects-header {
 
 #project3 {
   background-image: url("../assets/mppt_thumbnail.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+#project4 {
+  background-image: url("../assets/encrypto_thumbnail.jpg");
   position: absolute;
   top: 0;
   left: 0;
