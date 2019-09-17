@@ -191,6 +191,7 @@ h1#aboutme-header {
   height: auto;
   min-height: 100vh;
   width: 100%;
+  padding-top: 12rem;
 }
 
 h1#experience-header {
@@ -496,6 +497,10 @@ h1#projects-content-header {
     font-size: 40px;
   }
 
+  .experience {
+    padding-top: 10rem;
+  }
+
   h1#aboutme-header {
     font-size: 30px;
   }
@@ -606,6 +611,10 @@ h1#projects-content-header {
 
   .aboutme-image-holder {
     margin-left: 10px;
+  }
+  
+  .experience {
+    padding-top: 8rem;
   }
 
   .experience-container {

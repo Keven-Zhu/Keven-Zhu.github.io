@@ -29,7 +29,7 @@ $(document).ready(function() {
 
       loaded1=true;
     }
-    else if (!loaded2 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 1.5)) {
+    else if (!loaded2 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 1.8)) {
       window.setTimeout(function(){
         document.getElementById('experience-header').className += " load";
       }, 400);
@@ -39,7 +39,7 @@ $(document).ready(function() {
       }, 900);
       loaded2=true;
     }
-    else if (!loaded3 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * .5)) {
+    else if (!loaded3 && $(window).scrollTop() >  $(document).height() - $(window).height() - (screen.height * 1)) {
       window.setTimeout(function(){
         document.getElementById('projects-header').className += " load";
       }, 400);
